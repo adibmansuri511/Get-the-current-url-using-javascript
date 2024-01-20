@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #206925, #468626, #6fa222, #9dbe1a, #d1d80c);
+    background-image: radial-gradient(circle, #124eaa, #2872be, #5094cd, #7fb6da, #b2d6e8);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +26,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
 
 form input {
@@ -45,17 +46,9 @@ form input:focus {
     transition-duration: 100ms;
 }
 
-.custom-text-dark {
+/* .custom-text-dark {
     color: #000000;
-}
-
-
-/* .input-color {
-    color: blue !important;
-    font-size: 1rem;
-    font-weight: bold;
 } */
-
 
 .btn-01,
 .btn-01 *,
@@ -70,20 +63,22 @@ form input:focus {
 .btn-01 {
     -webkit-tap-highlight-color: transparent;
     -webkit-appearance: button;
-    background-color: #082604;
+    background-color: #001593;
     background-image: none;
     color: #fff;
     cursor: pointer;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
         Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
         Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-size: 100%;
-    font-weight: 900;
+    font-size: 1rem;
+    font-weight: 500;
     line-height: 1.5;
     margin: 0;
     -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
     padding: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 
 .btn-01:disabled {
@@ -106,7 +101,7 @@ form input:focus {
 .btn-01 {
     border-radius: 99rem;
     border-width: 2px;
-    padding: 0.8rem 3rem;
+    padding: 0.5rem 1rem;
     z-index: 0;
 }
 
@@ -120,9 +115,10 @@ form input:focus {
     display: block;
 }
 
+/* This is important */
 .btn-01 .text {
     display: block;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     position: relative;
 }
 
@@ -170,7 +166,7 @@ form input:focus {
 .btn-01:after,
 .btn-01:before {
     --tilt: 20px;
-    background: #ffffff;
+    background: #031058;
     -webkit-clip-path: polygon(0 0,
             calc(100% - var(--tilt)) 0,
             100% 50%,
